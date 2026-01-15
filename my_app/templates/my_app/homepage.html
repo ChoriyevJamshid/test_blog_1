@@ -1,11 +1,21 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block title %}
-    Asosiy sahifa
+Asosiy sahifa
 {% endblock title %}
 
 
 {% block content %}
+    <div class="container">
+        <div class="card text-center my-5">
+<!--        <img src="{% static 'images/hero.png' %}" class="card-img-top" alt="...">-->
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="{% url 'article_list' %}" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    </div>
 {% endblock content %}
 
