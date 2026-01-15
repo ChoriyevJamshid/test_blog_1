@@ -8,7 +8,7 @@ def home_page_view(request):
 
 
 def article_list_view(request):
-    articles = Article.objects.all()
+    articles = Article.objects.filter(status=Article.Status.PB)
     context = {
         'articles': articles,
     }
